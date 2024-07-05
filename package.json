@@ -1,0 +1,18 @@
+{
+  "name": "fleek-mud-fn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server-func-mock.js",
+    "deploy": "fleek functions deploy  --name fudGame --path fleek.js"
+  },
+  "author": "eugenioclrc",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "express": "^4.19.2"
+  }
+}
