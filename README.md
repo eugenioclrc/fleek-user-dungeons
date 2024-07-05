@@ -10,6 +10,14 @@ Welcome to **Fleek User Dungeon (FUD)**, a simple Multi-User Dungeon (MUD) playa
 - **Custom SVG Renderer**: Unique rendering engine tailored for SVG, ensuring smooth visuals.
 - **Compression for Farcaster Compatibility**: State compression using manual and gzip methods to fit within Farcaster's 2000 character limit.
 
+## TODO
+
+- **More Actions**: Given the limited buttons in Farcaster, the player can only move in 4 directions, but would be great to add more actions base on player position, example if he is in a stair, he can go up or down. If he is standing in a potion he can drink it.
+- **Items and Inventory**: Add items to the game, and allow the player to pick them up and use them.
+- **Claim Rewards**: Add a way to claim rewards (or just mint an NFT) when the player reaches a certain point in the game.
+- **Leaderboard**: Add a leaderboard to track the best players.
+- **Better compression**: The current compression method is very basic, it would be great to implement a more efficient way to compress the game state. Like taken advantage of the fact that the game is generated procedurally and we can use that *seed* to compress the state.
+
 ## Getting Started
 
 ### Prerequisites
