@@ -46,7 +46,8 @@ export default function bootstrap(HUB_URL) {
             <body>
             <h1>Welcome to Fleed User Dungeons</h1>
             <p>Click the button to start playing in warpcast</p>
-            <a href="https://warpcast.com/an0n/0x3748eeea" class="button">Lets play!</a>
+            <a href="https://warpcast.com/an0n/0x3748eeea" class="button">Lets play!</a><br />
+            <a href="https://github.com/eugenioclrc/fleek-user-dungeons">Source code</a>
             </body>
           </html>
           `;
