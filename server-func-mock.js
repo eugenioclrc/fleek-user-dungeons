@@ -2,7 +2,7 @@ import express from 'express';
 const app = express()
 const port = 3001
 
-import bootstrap from './index.js'
+import bootstrap from './dist/index.js'
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

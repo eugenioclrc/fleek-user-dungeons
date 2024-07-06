@@ -3,10 +3,12 @@
 
 import {render, db} from './lib/gameloop.js';
 
+
 export default function bootstrap(HUB_URL) {
 // @todo state should be validated with framecast
 
   function getHtml(frameImage) {
+    
     let framePostUrl = HUB_URL+"/";
     
     // @todo for now we only have one move buttons but if user is in a stair or item we should change the options
@@ -15,7 +17,7 @@ export default function bootstrap(HUB_URL) {
             <head>
             <meta property="fc:frame" content="vNext" />
             <meta property="of:accepts:xmtp" content="2024-02-01" />
-            <meta property="fc:frame:image" content="https://svg2png.deno.dev/${frameImage}" />
+            <meta property="fc:frame:image" content="${frameImage}" />
             <meta property="fc:frame:image:aspect_ratio" content="1:1" />
             <meta property="fc:frame:post_url" content="${framePostUrl}?r=3" />
             <meta property="fc:frame:button:1" content="⬆️" />

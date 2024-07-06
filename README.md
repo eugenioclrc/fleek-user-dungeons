@@ -8,6 +8,7 @@ Welcome to **Fleek User Dungeon (FUD)**, a simple Multi-User Dungeon (MUD) playa
 
 - **Fully Functional MUD**: Enjoy a classic text-based adventure game.
 - **Custom SVG Renderer**: Unique rendering engine tailored for SVG, ensuring smooth visuals.
+- **SVG Conversion to png**: Convert SVG to PNG for Farcaster compatibility, all inside fleek using WASM.
 - **Compression for Farcaster Compatibility**: State compression using manual and gzip methods to fit within Farcaster's 2000 character limit.
 
 ## TODO
@@ -40,22 +41,31 @@ Welcome to **Fleek User Dungeon (FUD)**, a simple Multi-User Dungeon (MUD) playa
     npm install
     ```
 
-3. **Deploy the Fleek function**
+
+3. **Build with rollup**
+    ```bash
+    npm run build
+    ```
+
+4. **Deploy the Fleek function**
     ```bash
     fleek functions deploy --name fudGame --path fleek.js
     ```
 
-4. **Local testing**
+5. **Local testing**
     ```bash
     npm run dev
     ```
 
-5. **Connect with ngrok and the Farcaster debugger**
+6. **Connect with ngrok and the Farcaster debugger**
     - Start ngrok
     ```bash
     ngrok http 3000
     ```
     - Use the generated ngrok URL with the Farcaster debugger: [Farcaster Frame Debugger](https://warpcast.com/~/developers/frames)
+
+7. Alternative you can use Frames to test the game, just run the express server and [FramesJS](https://framesjs.org/) will take care of the rest.
+
 
 ### Playing the Game
 

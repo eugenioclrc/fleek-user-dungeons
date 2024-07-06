@@ -1,4 +1,4 @@
-import bootstrap from './index.js'
+import bootstrap from './dist/index.js'
     
 export const main = (request) => {
     const {POST} = bootstrap(
