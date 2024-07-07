@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 
 app.use( async (req, res) => {
     // @notice this is a mock server for the frontend use your ngrok connection
-    const {POST} = bootstrap('https://0f6b-109-130-117-129.ngrok-free.app');
+    const {POST} = bootstrap('http://localhost:3001');
     const html = await POST({request: req});
     //console.log(html)
     res.send(html);

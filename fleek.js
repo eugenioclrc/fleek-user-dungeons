@@ -8,5 +8,5 @@ export const main = (request) => {
     return POST({request})
 
 };
-// ./node_modules/.bin/esbuild  fleek.js --bundle --platform=node > fleek-out.js
-  // fleek functions deploy  --name fudGame --path fleek.js
+// npm run build
+// fleek functions deploy  --name fudGame --path fleek.js
